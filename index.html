@@ -1,0 +1,29 @@
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href ="styles\stylesindex.css">
+        <title> PaginaInicial</title>
+        
+    </head>
+
+    <body>
+        <div class="container">
+        <div class="titulo">
+        <div class="letra">
+            <h1>Pagina Inicial </h1>
+        </div>
+        </div>
+        <div class="conteudo">
+        <img src="https://www.shareicon.net/data/512x512/2015/10/03/650430_users_512x512.png" alt="username" width="200" height="200"><br><br><br><br>
+        <form action="login.php" method="post" id="loginForm">
+            <label>Username:</label>
+            <input type="text" id="username" placeholder="Nome de Utilizador" required><br><br>
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Palavra-passe" required><br><br>
+            <input type="button" name="LogIn" id="LogIn" value="Login" onclick="funcaologin()">
+        </form>
+        </div>
+        </div>
+    </body>
+    <script src="scripts/scriptsindex.js"></script>
+</html>
