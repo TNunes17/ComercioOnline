@@ -1,3 +1,51 @@
-ola eu sou o joca
-ole 
+Grupo 3 - P20 Comércio Online
+
+Desenvolver uma aplicação web de venda de camisolas de Futebol, aplicação essa que interage com um servidor de base de dados, onde tem informação sobre as camisolas, dados dos clientes e informação de pagamentos.
+
+Tipo de utilizadores: Admin, Cliente, Guest.
+
+Funcionalidades: Admin:
+
+    Adicionar Novas Camisolas;
+    Alterar Informacoes sobre as Camisolas;
+    Acesso a Pedidos de Suporte;
+    Todas as Permissoes dos Clientes.
+
+Cliente:
+
+    Visualizar a Lista de Camisolas Disponiveis para Comprar;
+    Ver Informaçoes sobre as Camisolas;
+    Comprar Camisolas;
+    Avaliar o Serviço;
+    Ver Historico de Artigos Adquiridos;
+    Acesso ao Suporte;
+
+Guest:
+
+    Entrar com Conta;
+    Criar Conta;
+    Ver Todas as Camisolas Disponiveis para Comprar.
+
+Ator: 	Admin 		
+Código 	Nome 	Descrição 	Prioridade
+ADM01 	Adicionar novas camisolas. 	Como Admin quero adicionar novas camisolas ao site. 	Alta
+ADM02 	Alterar informação sobre as camisolas. 	Como Admin quero alterar a informação das camisolas. 	Alta
+ADM03 	Acessar pedidos de suporte. 	Como Admin quero acessar a lista de pedidos de suporte. 	Média
+ADM04 	Responder a um pedido de suporte. 	Como Admin quero responder a um pedido de suporte. 	Média
+			
+Ator: 	Cliente 		
+Código 	Nome 	Descrição 	Prioridade
+CLI01 	Ver todas as camisolas disponíveis. 	Como Cliente quero visualizar todas as camisolas disponíveis para comprar. 	Alta
+CLI02 	Ver informações sobre as camisolas. 	Como Cliente quero ver as informações das camisolas. 	Alta
+CLI03 	Comprar uma camisola. 	Como Cliente quero comprar uma camisola. 	Alta
+CLI04 	Avaliar o serviço. 	Como Cliente quero avaliar o servico. 	Média
+CLI05 	Ver histórico de compras. 	Como Cliente quero ver o meu historico de compras efetuadas. 	Média
+CLI06 	Acessar suporte. 	Como Cliente quero mandar um pedido de suporte. 	Média
+CLI07 	Sair da Conta. 	Como Cliente quero sair da minha conta. 	Média
+			
+Ator: 	Guest 		
+Código 	Nome 	Descrição 	Prioridade
+GST01 	Criar conta. 	Como Guest quero criar uma nova conta. 	Alta
+GST02 	Entrar na conta. 	Como Guest quero entrar na minha conta. 	Alta
+GST03 	Ver Lista de Camisolas. 	Como Guest quero ver a lista de camisolas disponiveis. 	Alta
 
