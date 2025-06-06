@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+header {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.camisola-detalhe {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.camisola-detalhe img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.info {
+  padding: 30px;
+  width: 50%;
+}
+
+.info h2 {
+  margin-top: 0;
+}
+
+button {
+  background: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background: #000000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000;
+  color: white;
+  margin-top: 40px;
+}

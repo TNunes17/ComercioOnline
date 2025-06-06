@@ -1,67 +1,149 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background: #ffffffc4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
-.container {
-    width: 400px;
-    padding: 40px;
+header {
+  background: #000000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.banner {
+  background: url('https://via.placeholder.com/1200x300') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.banner h2 {
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 20px;
+}
+
+.produto {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.produto h3 {
+  margin: 15px 0 5px;
+}
+
+button {
+  background: #000000;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #000000;
+}
+
+footer {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.produto a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.produto button {
+  margin-top: 10px;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
     background: #fff;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    text-align: center;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
-.titulo {
+.login-container h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.letra {
-    font-family: 'Courier New', Courier, monospace;
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-.conteudo img {
-    width: 150px;
-    height: 150px;
-}
-
-.conteudo form {
-    margin-top: 20px;
-}
-
-.conteudo label {
-    display: block;
-    margin-bottom: 10px;
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     font-weight: bold;
 }
 
-.conteudo input[type="text"],
-.conteudo input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.login-container input[type="submit"]:hover {
+    background-color: #444;
 }
 
-.conteudo input[type="button"] {
-    width: 100%;
-    padding: 10px;
-    background: #333;
-    border: none;
-    cursor: pointer;
+.checkout-message {
+    max-width: 600px;
+    margin: 100px auto;
+    background: #e7ffe7;
+    padding: 30px;
+    border: 1px solid #7ec27e;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2d572d;
+}
+
+.checkout-message h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.checkout-message p {
     font-size: 18px;
-    color: #fff;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.conteudo input[type="button"]:hover {
-    background: #555;
 }

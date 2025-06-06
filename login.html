@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+    <nav><a href="index.html">Voltar</a></nav>
+  </header>
+
+  <main>
+    <form onsubmit="return login(event)">
+      <label for="username">Utilizador:</label>
+      <input type="text" id="username" required />
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required />
+      <button type="submit">Entrar</button>
+    </form>
+  </main>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>

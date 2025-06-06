@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>O Meu Carrinho</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+    <h1>Carrinho de Compras</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="carrinho">
+      <h2>Produtos no Carrinho</h2>
+      <ul id="lista-carrinho"></ul>
+      <p><strong>Total: €<span id="total">0</span></strong></p>
+      <button onclick="checkout()">Finalizar Compra</button>
+    </section>
+  </main>
+
+  <script src="scripts/carrinho.js"></script>
+</body>
+</html>

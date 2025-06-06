@@ -1,262 +1,59 @@
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
-    />
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Futebol Camisolas</title>
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header>
+    <h1>Futebol Camisolas</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
 
-    <title>Stitch Design</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  <section class="banner">
+    <h2>As melhores camisolas dos teus clubes favoritos!</h2>
+  </section>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  </head>
-  <body>
-    <div class="relative flex size-full min-h-screen flex-col bg-neutral-50 group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-      <div class="layout-container flex h-full grow flex-col">
-        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#ededed] px-10 py-3">
-          <div class="flex items-center gap-8">
-            <div class="flex items-center gap-4 text-[#141414]">
-              <div class="size-4">
-                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
-                    fill="currentColor"
-                  ></path>
-                </svg>
-              </div>
-              <h2 class="text-[#141414] text-lg font-bold leading-tight tracking-[-0.015em]">Soccer Gear</h2>
-            </div>
-            <div class="flex items-center gap-9">
-              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Teams</a>
-              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Jerseys</a>
-              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Accessories</a>
-              <a class="text-[#141414] text-sm font-medium leading-normal" href="#">Sale</a>
-            </div>
-          </div>
-          <div class="flex flex-1 justify-end gap-8">
-            <label class="flex flex-col min-w-40 !h-10 max-w-64">
-              <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
-                <div
-                  class="text-neutral-500 flex border-none bg-[#ededed] items-center justify-center pl-4 rounded-l-lg border-r-0"
-                  data-icon="MagnifyingGlass"
-                  data-size="24px"
-                  data-weight="regular"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
-                    ></path>
-                  </svg>
-                </div>
-                <input
-                  placeholder="Search"
-                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#141414] focus:outline-0 focus:ring-0 border-none bg-[#ededed] focus:border-none h-full placeholder:text-neutral-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
-                  value=""
-                />
-              </div>
-            </label>
-            <div class="flex gap-2">
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#ededed] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-[#141414]" data-icon="Heart" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M178,32c-20.65,0-38.73,8.88-50,23.89C116.73,40.88,98.65,32,78,32A62.07,62.07,0,0,0,16,94c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,220.66,240,164,240,94A62.07,62.07,0,0,0,178,32ZM128,206.8C109.74,196.16,32,147.69,32,94A46.06,46.06,0,0,1,78,48c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,147.61,146.24,196.15,128,206.8Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-              <button
-                class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#ededed] text-[#141414] gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5"
-              >
-                <div class="text-[#141414]" data-icon="ShoppingBag" data-size="20px" data-weight="regular">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
-                    <path
-                      d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"
-                    ></path>
-                  </svg>
-                </div>
-              </button>
-            </div>
-            <div
-              class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
-              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQGBtn1EyB5jpOqJkNcVCseFGxnISwGPesDynYHdoxrYSn4Ix7RyT6s75AGaug_GZntiLUEewchaapRmD8ayV3wS0WR0TVp6QPiqAlmpUS6e6F4cGQYoCrs21ZA1xsK4lHCW9b9pTQsa369MEGALLRAxQSjzw-gWMPoJ8dKZYrj4CkhcJTOTBwlvNvAh49WGNzvwuk57Gie9Ss9I4dr1eeiWMsNYLLEPkz3mxULmlg8uF62eqywq123Zn6bb1hZtNIxJ2jXaPjp-o");'
-            ></div>
-          </div>
-        </header>
-        <div class="px-40 flex flex-1 justify-center py-5">
-          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
-            <div class="@container">
-              <div class="@[480px]:p-4">
-                <div
-                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
-                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDb8oBZyNFIjyGkIcHcdI9NGT1gMHUeDI3ydkezVNgSb5mkHXs5YZeJZbFFHr8TJIxvTlhyiodN2q3HpFHrEcaT9qP9WAPnxmVTp4oOOVBEvyrjCSSz9-7aFQddnUE6JnwqQk6mlCGNO8Y1ViJ3xvRG6ezdKSCa2UjyqxhKBi8zxkhOgireb6CzA-ZHR5wIYdzaAMvSZblU2_56H1F3zs5vl4JEVMlLy6a6odvhOgFRsAeCVLoBiM_XKFWjj8E27z2GTrP98-zVBOg");'
-                >
-                  <div class="flex flex-col gap-2 text-center">
-                    <h1
-                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
-                    >
-                      Score Big with Authentic Soccer Jerseys
-                    </h1>
-                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                      Gear up for the season with the latest jerseys from top teams and leagues. Find your perfect fit and show your support.
-                    </h2>
-                  </div>
-                  <button
-                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-black text-neutral-50 text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
-                  >
-                    <span class="truncate">Shop Now</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Featured Jerseys</h2>
-            <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
-              <div class="flex items-stretch p-4 gap-3">
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5F6bBJOLlQnH0Rn-L8jk4FqCHVtrN8J632NMegjTUj6SUug0xVQw_A3KQIsnwMEqWN6p3ST7TgwCTxnrxJiFc7eeb4WEm6DOjmpQkvq-2_eIF9YOZIC3-2qkGrO2weGh2EWv3ZXntam04yHOGKwMcr2BD6dlqeEJm25CxQGVaCmFTV-44iYdOlaEcjHmXLSJob7R7SctpW8_nw137_uEr9EIRQBOSYyJ8mxrf5IIvTzWcek05ASJAgenHXV9Oms-YIKpjfTtrHkc");'
-                  ></div>
-                  <div>
-                    <p class="text-[#141414] text-base font-medium leading-normal">Team A Home Jersey 2023/24</p>
-                    <p class="text-neutral-500 text-sm font-normal leading-normal">$99.99</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBYgUVwJDJ40RzYekeYuK02O_hovrfQ220LVyS2TzjNH0TGzGVl5k5K1RZAaYefOuMdEtvBuFyd9uvL_cwh8qQLzVqtkO9P5YcPweG8FZWKBfu63NZp8NPa3q6lz06RgsAQ03J-TGj29eEpxq5D4Y6_N-iM74LFX1AuGKTA2wq3bk-srJwueE_XOzk6Jp4Rcpv6Uk6liVkhu2fGhCxgTgmqRGYxBnI7yECPWMk31NBDlRBNAfTDWTcW2jdT_btVrvB5B6HXmxJqnQ");'
-                  ></div>
-                  <div>
-                    <p class="text-[#141414] text-base font-medium leading-normal">Team B Away Jersey 2023/24</p>
-                    <p class="text-neutral-500 text-sm font-normal leading-normal">$89.99</p>
-                  </div>
-                </div>
-                <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-                  <div
-                    class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex flex-col"
-                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBAdbBTLZ0a8QCEzv2I1gKfChhAyDvGDT7jPC0jC5lHnCM9sJDcz3o3uf45uBBrFEGJXpyJJOC0LB2C4YMhzXog5wAz7rotb59-yGv5EuU4RuB9J_E29KyqoKWkLuW34Fqgla7d5S2uDr6RB1piadiimUL0ThzDVcSSNd0yA4VRt6ggTv2fsWcduS7ZJrkMb8tIAtVoCwk3sMwPA7TjZt2Dc4-tL0bMXX0WdFdaBQe4PX3HsNFpnf88AYw6eUW9hS_sYniSZZSmxWI");'
-                  ></div>
-                  <div>
-                    <p class="text-[#141414] text-base font-medium leading-normal">Team C Third Jersey 2023/24</p>
-                    <p class="text-neutral-500 text-sm font-normal leading-normal">$79.99</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">New Arrivals</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdkG4XCNOFeRs9M9oVtGAHDhkFDF2DGiDmMCnnYZL9Q0zLeBWUyhGyYfzPEuhp7aSfXxrUidkhqWSPQoHbfDfzqfvVchwEwCgpRMFIlLFG3YjHiLBXzZNeM9TxwpXo5oXRwOEIzqkc4ics6lfSbk4-YfQu1IDskf2yqK9kh4JzzZuUuPrwQjx5tX_hW7pOYujSCrD9htqU7rgUbbNzctDsJRzJb5B12hWeEZMpp57PLw8oCBRHKMUr5xnpJK7zX6vmyCfDQ4PQOP4");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team D Home Jersey 2023/24</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2fdyENi6PZvsUWS5oNYW18dVyuR20oc-leJjPb4mSF_KihK5CZsnFz2yCw3onuF3eRGkQDtkUkAodPCCHlCgil9PAbnRSNUNBd9QXe2hiRAzvodVG0o88pNfygGrYO675mBvh7ZpjrD9ury_Ac_aHEAgIM1OlZ0GaR8zjjsR0T6CUXf-lEwdMebJtRZ2Z7rpw_1YtYTxNtaBBnCVNXwD9IPEUOZQSQbBsSRPBsKhIX1-rZSGvtX40-ba232tYqmV47yd4wFcZen8");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team E Away Jersey 2023/24</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7aGvRqLOmYt5IfZv6gpRAFSOxRMSq96bFuc0Fj6BqUC2doSEXdYfwQwk-pQrA5w419K7iZgJr5UQCwX-sbRcJmDineXuYFX24seSDhKonPF-05eiSyv3it5xGKAy_y_1o_5I2FN_srLSmS-YZV1Pbh4jqVswU4q3SU9CzV1rwMKtMYCGjKU4J11MxroSLrVv1pHD4Rah9KT2cU9Qte6lMVCfnNMcD0s7709lRyDfpMHFRpmhHrVp0FXJIs9D0G3o7A0xqPUZMBLA");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team F Third Jersey 2023/24</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFIPkyQF9kSaxAoClPguQABGDxMg_o4Zp4X5d94J3DmlI2zyD9rgwg4xHF8mLwZGq5zYayHT89QzBTiixwhV4VwlotcDZQT56GQfp6WKu87oaV4X7U1Bc-L6vT3mNPBDSDyPzfyiRD38hmwCafDR1Ys_H4EKWkgdYEix_5wnhtd__BdlHerTECC587qUys9Pu9an8nltHHjlzN1mfTG8u5uyTu_zUnrL-iX5BYkUa6e1rMJryeGEs_fBgVGu99Dnyjza9HATDf2YA");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team G Home Jersey 2023/24</p>
-              </div>
-            </div>
-            <h2 class="text-[#141414] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Sale Items</h2>
-            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCTuCX2Y6wuIM2Rmb3bXu6xdUfQ9ULZuDhTkBkXyqJRmzmBuzFuSVBvNX0lgBoayZZe1DWqSlpuCKQ0jHOWvOGyq10R1DLYcAjY_SMffKmpT1Y7jN3ntZVEumuNrwf5yyELtpKORcNYRrJolAK98quMBKKwCKDaE9QqWBfGgU3hxf8fnOnepGGY_9Ik0nDN9dMj-aa-zTng7EqJ1RnGz3pPytMv3h7AVqhDYpbI8eAOUAON_BL74KWF0K1-3kLYFhXal6Asq12H1os");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team H Home Jersey 2022/23</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBR2I5xv8WzipyIHeX9qHh2UENTngSqT2VFpRziX96kw0Md3vwridwFdwXpYgUfl1T5s6kjGNG29Ik4mXLZYhYf08g8sqAbyRb59BlNoXEN7Ti5bhSgrfDDthQr6a8TH7xJvo6gQ9mxCuUa9iss0COEiqmip--NqptaBW26oQTcAJTbhNNCfD9q42nMy7b_sSGbHQop7FBLFhPgT4V-69CXj0UlQ47stRc2_RpRz9-47KR6j2KvJW4d41miy5SMwQtw8f8hxiF90pI");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team I Away Jersey 2022/23</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuANLluRGAd94GbtrXWjhWNP8L1JQBzd6pwRRFL0X_5cCUySRJpfmlcWb8lNtjf0_A1SUmjXzriF38w55v81q8cSfvQRNJ_Bt7uZvb2R3GVnlxjcjkBpjeFOmAnu1nLIivdh8Lr2R4ioi1N9q4ZnNHwS2JNKMtoHtPg8UZaxJU0-snzgJ958BAXEnM3HofwXZYc2PdjNU8OkzAknuw9db1b7V2x4b4UjFwVEindFIQnH6dE0besZhp9Z-TaeBiLVDmtTgsXtv94Zy_Y");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team J Third Jersey 2022/23</p>
-              </div>
-              <div class="flex flex-col gap-3 pb-3">
-                <div
-                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
-                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBk53MUWQTLtJjM5C5C_QmSbdGVMkvQ5Nbvk5QiwgYba_2V70AcQLzYodUuVDBmPuDLKzOVd0c5Qo_ELaBNsrDc7OzvzaBGbyjuatzrmjDS2ps9cOyiRAExe08HeyFJ1E-ywDUGLTM7kZDIaCakhiFytyoIy9MBWXgOyTpVYjMjsP30vuDlAaxPm9QDF4A6GPAH918sxwRYnm-U2bO6DLxIqyRouCXyg9AcAvWje5MRTcYvYASQP9L71PMQ-Dqhwn8bHCEVCrCByrU");'
-                ></div>
-                <p class="text-[#141414] text-base font-medium leading-normal">Team K Home Jersey 2022/23</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="flex justify-center">
-          <div class="flex max-w-[960px] flex-1 flex-col">
-            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
-              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-                <a class="text-neutral-500 text-base font-normal leading-normal min-w-40" href="#">About Us</a>
-                <a class="text-neutral-500 text-base font-normal leading-normal min-w-40" href="#">Contact</a>
-                <a class="text-neutral-500 text-base font-normal leading-normal min-w-40" href="#">FAQ</a>
-                <a class="text-neutral-500 text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
-                <a class="text-neutral-500 text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
-              </div>
-              <div class="flex flex-wrap justify-center gap-4">
-                <a href="#">
-                  <div class="text-neutral-500" data-icon="TwitterLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="text-neutral-500" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="text-neutral-500" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
-                      <path
-                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <p class="text-neutral-500 text-base font-normal leading-normal">@2024 Soccer Gear. All rights reserved.</p>
-            </footer>
-          </div>
-        </footer>
-      </div>
+  <main class="produtos">
+    <div class="produto">
+      <a href="porto.html">
+        <img src="https://th.bing.com/th/id/OIP.iI8Z7fdWWwHyJ2i0JET-hgHaHa?r=0&w=800&h=800&rs=1&pid=ImgDetMain" alt="Camisola FC Porto 2024/25">
+        <h3>FC Porto 2024/25</h3>
+        <p>€89.99</p>
+        <button>Ver Detalhes</button>
+      </a>
     </div>
-  </body>
+
+    <div class="produto">
+      <a href="benfica.html">
+        <img src="https://www.imagehandler.net/?istyle=0000&fmt=png&img=A1100697000&iset=0108&c=999&iindex=0007&w=600&h=600&l1lc=0OR203&l1s=4&l1l=R1062066&l2lc=0OR213&l2s=4&l2l=R1062068" alt="Camisola SL Benfica 2024/25">
+        <h3>SL Benfica 2024/25</h3>
+        <p>€89.99</p>
+        <button>Ver Detalhes</button>
+      </a>
+    </div>
+
+    <div class="produto">
+      <a href="sporting.html">
+        <img src="https://static.wixstatic.com/media/abc862_a0ac7da4b07b43a2b07be62291d37d46~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg" alt="Camisola Sporting CP 2024/25">
+        <h3>Sporting CP 2024/25</h3>
+        <p>€84.99</p>
+        <button>Ver Detalhes</button>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Futebol Camisolas. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="scripts/index.js"></script>
+</body>
 </html>
