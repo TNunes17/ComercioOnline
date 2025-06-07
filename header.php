@@ -23,9 +23,10 @@ if (session_status() === PHP_SESSION_NONE) {
 <header>
 <h1>Futebol Camisolas</h1>
 <nav>
-<a href="#">Início</a>
-<a href="#">Produtos</a>
-<a href="#">Sobre</a>
-<a href="#">Contato</a>
+    <a href="index.php">Início</a>
+    <a href="index.php">Produtos</a>
+    <a href="sobre.php">Sobre</a>
+    <a href="contacto.php">Contato</a>
+    <a href="login.php">Login</a>
 </nav>
 </header>
